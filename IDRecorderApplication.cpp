@@ -1,3 +1,10 @@
+/*
+ * This program demonstrates the basic operation we can do in an array.
+ * This program process natural language and do the stuff in background,
+ * then show the output in a proper manner.
+ * (C) 2023, Khalid Sayfullah.
+ */
+
 #include <iostream>
 using namespace std;
 
