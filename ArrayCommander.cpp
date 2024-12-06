@@ -1,9 +1,10 @@
 /*
- * This program demonstrates the basic operation we can do in an array.
- * This program process natural language and do the stuff in background,
- * then show the output in a proper manner.
+ * This program showcases fundamental array operations through a console-based interface.
+ * It processes natural language commands, performs the requested actions in the background,
+ * and displays the results in a clear and user-friendly manner.
  * (C) 2023, Khalid Sayfullah.
  */
+
 
 #include <iostream>
 using namespace std;
@@ -209,7 +210,7 @@ void instruction() {
     cout << "6. Stop this process like this: stop" << endl << endl;
 }
 
-void IDRecorderApplication() {
+void ArrayCommander() {
     instruction();
     string command;
     int response;
@@ -266,7 +267,7 @@ void IDRecorderApplication() {
 }
 
 int main() {
-    IDRecorderApplication();
+      ArrayCommander();
 
     return 0;
 }
