@@ -8,9 +8,9 @@
 #include <iostream>
 using namespace std;
 
-const int size = 10;
+const int arraySize = 10;
 int privateIndex = 0;
-int privateArray[size];
+int privateArray[arraySize];
 int extractedCommand[3];
 
 int indexFinder(int value) {
@@ -23,7 +23,7 @@ int indexFinder(int value) {
 }
 
 int insertValue(int value) {
-    if(privateIndex < size) {
+    if(privateIndex < arraySize) {
         privateArray[privateIndex] = value;
         privateIndex++;
         return 1;
@@ -32,7 +32,7 @@ int insertValue(int value) {
 }
 
 int updateValue(int value, int updatingValue) {
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < arraySize; ++i) {
         if(value == privateArray[i]) {
             privateArray[i] = updatingValue;
             return i;
@@ -43,7 +43,7 @@ int updateValue(int value, int updatingValue) {
 
 int removeValue(int value) {
     int index;
-    int tempArray[size];
+    int tempArray[arraySize];
     index = updateValue(value, 0);
 
     for (int i = 0; i <= privateIndex; ++i) {
